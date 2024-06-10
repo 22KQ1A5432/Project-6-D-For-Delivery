@@ -1,0 +1,223 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Employee Login</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+            crossorigin="anonymous">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  
+            <link rel="icon" href="Screenshot .png" type="image/x-icon">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <style>
+                @media screen and (min-width:300px) and (max-width:499px){
+                    
+               
+                    body {
+               background-image: url(
+   "https://th.bing.com/th/id/OIP.ChQPaoc8jhu4EgtAOc4mNgHaC2?w=276&h=134&c=7&r=0&o=5&pid=1.7");
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-attachment: fixed;
+               height: fit-content;
+           }
+           
+           .abc{
+               color: black;
+               
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               text-align: center;
+           }
+           
+           .card {
+               top: 50%;
+               box-shadow: 0 0 5px 0;
+               background: inherit;
+               backdrop-filter: blur(10px);
+               margin-top: 100px;
+               margin-left: 20px;
+               text-align: center;
+               position: relative;
+               width: 90%;
+           }
+           h3{
+               text-align: left;
+               word-spacing: 250px;
+               
+           }
+          
+           .aaa{
+               font-size: 300%;
+               font-family: fantasy;
+               color: #000;
+           }
+           .container {
+     position: relative;
+     text-align: center;
+     color: white;
+   }
+           .bottom-right {
+     position: absolute;
+     top:450px;
+     bottom: 8px;
+     right: 25px;
+   }}
+                 @media screen and (min-width:500px) and (max-width:749px){
+                    
+               
+                    body {
+               background-image: url(
+   "https://th.bing.com/th/id/OIP.ChQPaoc8jhu4EgtAOc4mNgHaC2?w=276&h=134&c=7&r=0&o=5&pid=1.7");
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-attachment: fixed;
+           }
+           
+           .abc{
+               color: black;
+               
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               text-align: center;
+           }
+           
+           .card {
+               top: 50%;
+               box-shadow: 0 0 5px 0;
+               background: inherit;
+               backdrop-filter: blur(10px);
+               margin-top: 100px;
+               margin-left: 20px;
+               text-align: center;
+               position: relative;
+               width: 70%;
+           }
+           h3{
+               text-align: left;
+               word-spacing: 250px;
+               
+           }
+          
+           .aaa{
+               font-size: 300%;
+               font-family: fantasy;
+               color: #000;
+           }
+           .container {
+     position: relative;
+     text-align: center;
+     color: white;
+   }
+           .bottom-right {
+     position: absolute;
+     bottom: 8px;
+     left: 450px;
+   }}
+                @media screen and (min-width:750px) and (max-width:1500px){
+                    
+               
+                 body {
+            background-image: url(
+"https://th.bing.com/th/id/OIP.ChQPaoc8jhu4EgtAOc4mNgHaC2?w=276&h=134&c=7&r=0&o=5&pid=1.7");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .abc {
+            color: black;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+        
+        .card {
+            top: 50%;
+            box-shadow: 0 0 5px 0;
+            background: inherit;
+            backdrop-filter: blur(10px);
+            margin-top: 100px;
+            margin-left: 20px;
+            text-align: center;
+            position: relative;
+            width: 50%;
+        }
+        h3{
+            text-align: left;
+            word-spacing: 250px;
+            
+        }
+       
+        .aaa{
+            font-size: 300%;
+            font-family: fantasy;
+            color: #000;
+        }
+        .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+        .bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}}
+            </style>
+            <script>
+                function LoginValidation(){
+                    
+                    var uname=document.myform.username.value;
+                    var password=document.myform.password.value;
+                   if(uname==null || uname==""){
+                        alert("Name can not be blank")
+                        return false;
+                    }
+                    else if(password.length<8){
+                        alert("Password must be 6 letters")
+                        return false;
+                    }
+                    
+                        return true
+                    
+                }
+            </script>
+    </head>
+    <body> <a href="home.html"><h2 class="fa fa-fw fa-home" >Home</h2></a>
+        <form name="myform" action="after login.html" onsubmit="return LoginValidation(this)">
+
+        <div class="container">
+            <div class="card card-body" 
+                style="justify-content: center;">
+               
+                <h2 class="abc">Customer Login</h2><hr>
+                <br><br>
+                <h2 class="abc">UserName : <input type="text" name="username"> </h2><br>
+                <h2 class="abc"> Password :  <input type="password" name="password"></h2><br>
+                <h3><input type="Checkbox" name=:"byke">Remeber_Me
+                <span style="color: rgba(0, 0, 255, 0.904);"><a href="https://mail.google.com/">Forget_Password?</a></h4></span></h3>
+                <br><h2 class="abc"> <input type="submit" value="Submit"></h2>
+                <h2 class="abc"><span style="color: rgba(0, 0, 255, 0.904);"><a href=".\Register.html">Create a new account ?</a></span> </h1> 
+                </h2></b>
+                        
+            </div> <div class="bottom-right"><div class="aaa">
+                Welcome to our<br>
+                 D For DELIVERY<br></div>
+            <h2> Enjoy all our servies <br>by simply longing in.</h2>
+            </div>
+        </div>
+        
+       
+    </form>
+    </body>
+</html>

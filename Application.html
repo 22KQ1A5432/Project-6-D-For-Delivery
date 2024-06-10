@@ -1,0 +1,213 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>D For Delivery</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+            crossorigin="anonymous">
+            <link rel="icon" href="Screenshot .png" type="image/x-icon">
+            <link rel="stylesheet" href="home.css">
+            <style>
+                body{
+                    background-color: white;
+                    background-image: url("data:image/jpeg;base64,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");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                
+      
+
+.navbar-light .navbar-brand {
+    color: rgba(12, 198, 245, 0.486); /* Adjust text color for better visibility */
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color:rgb(8, 8, 8) /* Adjust text color for better visibility */
+  }
+  
+  .navbar {
+    backdrop-filter: blur(5px); /* Adjust blur amount for desired effect */
+    background-color:whitesmoke; /* Set background color and transparency */
+    box-shadow: 0 0 10px rgba(248, 244, 244, 0.1); /* Optional subtle shadow */
+    color:rgb(8, 8, 8) ;
+  }
+  .ash{
+            word-spacing: 150px;}
+            .ash1{
+                word-spacing: 110px;}
+                .ash2{
+                    word-spacing: 180px;}
+ 
+   
+            </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent ">
+            <a class="navbar-brand" href="#">
+                <img src="Screenshot .png" alt="" width="100" height="30"   class="rounded-circle"></a>
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><b>D For Delivery</b></a>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    
+                <li class="nav-item">
+                    <a class="nav-link active" 
+                    aria-current="page" 
+                       href="Homee.html"><i class="fa fa-fw fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle mt-0" data-bs-toggle="dropdown" style="color: whitesmoke;">
+                        <i class="fa fa-fw fa-user"></i> Login</a>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="logine.html">as Employee</a></li>
+                      <li><a class="dropdown-item" href="logind.html">as Dealer</a></li>
+                      <li><a class="dropdown-item" href="loginc.html">as Customer</a></li>
+                    </ul>
+               
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle mt-0" data-bs-toggle="dropdown" style="color: whitesmoke;">
+                      Registration
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="rege.html">as Employee</a></li>
+                      <li><a class="dropdown-item" href="regd.html">as Dealer</a></li>
+                      <li><a class="dropdown-item" href="regc.html">as Customer</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <button type="button" class="btn  btn-primary dropdown-toggle mt-0" data-bs-toggle="dropdown" style="color: whitesmoke;">
+                     Job Application
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="apply.html">Apply</a></li>
+                      <li><a class="dropdown-item" href="#">Announcements</a></li>
+                      <li><a class="dropdown-item" href="#">Instructions</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-primary  dropdown-toggle mt-0" data-bs-toggle="dropdown" style="color: whitesmoke;">
+                      Services
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="hhh.html">Home-Home</a></li>
+                      <li><a class="dropdown-item" href="ppp.html">Person[Place-Place]</a></li>
+                      <li><a class="dropdown-item" href="delar.html">Providence Of Delivery Boys</a></li>
+                    </ul>
+                  </div>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-primary  dropdown-toggle mt-0" data-bs-toggle="dropdown" style="color: whitesmoke;">
+                        Dashboard
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="hhh.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="ppp.html">Acheivmennts</a></li>
+                        <li><a class="dropdown-item" href="home.html">Singn Out</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav><br><br><br>
+          <i> <h2>fill the details for registration process</h2></i>
+          <hr> <b> <h4>Personal Details:</h4></b></form></body><br>
+        <b><i><div class="ash"> FirstName:<input type="text" name="fname"></b></i>
+        <b><i> MiddleName:<input type="text" name="mname"></b></i>
+        <b><i> LastName:<input type="text" name="lname"></b></i><br><br></div>
+        <b><i><div class="ash1">MobileNumber:<input type="int" name="phone"></b></i>
+       <b><i>Alter-MobileNumber:<input type="int" name="aler"></b></i>
+       <b><i>Email-Id:<input type="email" name="mail"><br><br></b></i></div>
+       <b><i><div class="ash2">Caste:<input type="text" name="caste"></b></i>
+       <b><i>State:<input type="text" name="state"></b></i>
+       <b><i>District:<input type="text" name="dist"></b></i></div><br>
+       <b><i><div class="ash">village:<input type="text" name="vill"></b></i>
+       <b><i>No.of-Siblings:<input type="number" name="sib"></b></i>
+       <b><i>Gender:<select name="qualification">
+          <option value="b.tec">     </option>
+      <option value="b.tech">MALE</option>
+      <option value="10">FEMALE</option>
+      <option value="mba">OTHER</option>
+   </select><br><br></div>
+       <hr>
+        <b> <h4>Education_Details:</h4></b><br>
+        <b><i><div class="ash">Present_Education:</b></i><select name="qualification">
+          <option value="b.tec">     </option>
+          <option value="b.tech">B.TECH</option>
+          <option value="m.tech">M.TECH</option>
+          <option value="PHD">PHD</option>
+        </select>
+        <b><i>Present_Marks:</b></i><input type="int" name="marks"></div><br>
+        <b>Upload_Certificate:<form action="/action_page.php">
+            <input type="file" id="myFile" name="filename"></form></b><br><br>
+      
+          <b><i><div class="ash">Previous_Education:<select name="qualification">
+              <option value="b.tec">     </option>
+          <option value="b.tech">B.TECH</option>
+          <option value="10">M.TECH</option>
+          <option value="mba">MBA</option>
+       </select>
+       <b><i></i>Previous_Marks:</b></i><input type="int" name="mark"></div><br>
+       <b>Upload_Certificate:<form action="/action_page.php">
+        <input type="file" id="myFile" name="filename"></form></b><br><br>
+       
+       <hr>
+       <b> <h4>Previous_Experience:</h4></b><br>
+       <b><div class="ash1">Experience_in:</b>
+       <input type="checkbox" name="cs" value="c">Delivery
+       <input type="checkbox" name="hml-5" value="ht">Ride_Service
+       <input type="checkbox" name="cs-3" value="h">Management
+       <input type="checkbox" name="cs-3" value="h">Others<br><br><br>
+       <b>Years-Of_Experience:</b><input type="radio" name="html" value="h">0
+       <input type="radio" name="css" value="c">1
+       <input type="radio" name="html-5" value="ht">2
+       <input type="radio" name="css-3" value="h">3<br><br><br></div>
+       <center>
+       <left>
+       <button type="button" value="submit">Submit</button></left>
+       
+      <button><a href=".\Neext.html" type="button">NEXT</a></button> </center>
+      
+  </body>
+</html>
+
+          
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+          integrity="sha384-52z9Z1PIpSVl7YsPEJc3cMWCiVX9pMPdR5+YYg8vTl3YYqvo9sOGcDhViWyDyGVg"
+          crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+          integrity="sha384-hhqIQv5GE0w4aQJJcP+J8yUkE5T4+JpK5YVxFkALBzhUTH5+VrA7f+rC2J84lC6H"
+          crossorigin="anonymous"></script>
+          
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+         
+    </body>
+</html>
